@@ -1,8 +1,8 @@
 #WardHarvest
 
 ##Requirements:
-*python
-*py-shortners (https://github.com/ellisonleao/pyshorteners)
+-python
+-py-shortners (https://github.com/ellisonleao/pyshorteners)
 
 
 ##Usage:
