@@ -5,5 +5,5 @@ A set of python tools to generate a html document that can be used visit a list 
 
 
 ###Requirements:
--python
--py-shortners [github page](https://github.com/ellisonleao/pyshorteners)
+- python
+- py-shortners [github page](https://github.com/ellisonleao/pyshorteners)
