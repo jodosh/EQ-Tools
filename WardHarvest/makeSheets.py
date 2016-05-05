@@ -29,7 +29,7 @@ with open('Sheet1.tsv', 'rb') as csvFile:
 
 		url = row[5]
 		print(url)
-		shortener = Shortener('TinyurlShortener', timeout=9000)
+		shortener = Shortener('Tinyurl', timeout=9000)
 		shortURL = shortener.short(url)
 
 		URL = shortener.qrcode().replace("120x120","220x220")
