@@ -1,4 +1,4 @@
-import csv
+import unicodecsv as csv
 from pyshorteners import Shortener
 import urllib
 
@@ -24,7 +24,7 @@ f.write(startHTML04)
 
 with open('Sheet1.tsv', 'rb') as csvFile:
     reader = csv.reader(csvFile, delimiter='\t')
-    for row in reader:
+    for idx,row in enumerate(reader):
 
 
 		url = row[5]
@@ -34,7 +34,7 @@ with open('Sheet1.tsv', 'rb') as csvFile:
 
 		URL = shortener.qrcode().replace("120x120","220x220")
 		
-		FILENAME = row[0]
+		FILENAME = str(idx)
 		FILENAME += ".png"
 
 		urllib.urlretrieve(URL, filename=FILENAME)

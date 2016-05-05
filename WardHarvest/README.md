@@ -2,7 +2,7 @@
 
 ##Requirements:
 - python
-- py-shortners (https://github.com/ellisonleao/pyshorteners)
+- py-shortners (https://github.com/ellisonleao/pyshorteners) [version 0.6.0+] 
 
 
 ##Usage:
@@ -16,3 +16,7 @@ makeSheets.py: Each row in Sheet1.tsv will become a table in a generted HTML doc
 gpsStamp.py: This creates map.tsv. map.tsv can be inported into mapping software so the assignments can be done geographically.
 
 makeSignup.py: This creates an HTML document so you can keep track of who was assigned to each house.
+
+##Known Bugs
+
+makeSheets.py does not handle non-ASCII chars.. if Sheet1.tsv has utf-8 chars, ñ for example, this will fail.
