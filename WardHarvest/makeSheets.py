@@ -13,7 +13,7 @@ endHTML = "</table></body>"
 tableStart = "<table class=gridtable>\n<tr><td>Last Name</td><td>First Name(s)</td><td>Address</td><td>Phone Number</td></tr>\n"
 
 
-f = open('test.html', 'w')
+f = open('sheets.html', 'w')
 
 f.write(startHTML00)
 f.write(startHTML01)
