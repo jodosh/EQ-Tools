@@ -3,6 +3,7 @@
 ##Requirements:
 - python
 - py-shortners (https://github.com/ellisonleao/pyshorteners) [version 0.6.0+] 
+- unicodecsv
 
 
 ##Usage:
@@ -17,6 +18,7 @@ gpsStamp.py: This creates map.tsv. map.tsv can be inported into mapping software
 
 makeSignup.py: This creates an HTML document so you can keep track of who was assigned to each house.
 
-##Known Bugs
+##Known Bugs/Limitations
 
-makeSheets.py does not handle non-ASCII chars.. if Sheet1.tsv has utf-8 chars, ñ for example, this will fail.
+- If Google changes its URL structure, gpsStamp.py will not be able to pull GPS locations from the URL and will fail.
+- utf-8 support is implimented, but not tested
